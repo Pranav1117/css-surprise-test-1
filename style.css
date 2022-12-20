@@ -1,0 +1,143 @@
+body{
+    background-image: linear-gradient(270deg,#b3a3dc,#5bb45b, #e4c3c6);
+}
+.boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.greenbox{
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    background-color: #024502;
+    
+}
+.box1{
+    transition: 1s linear 0.3s ;
+}
+
+
+.box1:hover{
+    background-image: radial-gradient(blue,green,yellow);
+    border-radius: 50%;
+}
+.box2{
+    transition: 3s ease-in-out ;
+}
+.box2:hover{
+    transform: rotate(360deg);
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.box3{
+    transition: 1s linear;
+}
+.box3:hover{
+    height: 150px;
+    width: 100px;
+    border-radius: 50%;
+    transform: rotate(-50deg);
+}
+.box4{
+    transition: 1s linear;
+
+}
+.box4:hover{
+border-top-right-radius:50% ;
+border-bottom-left-radius: 50%;
+}
+.para1{
+    transition: 1s linear;
+}
+.para1:hover{
+font-size: 150%;
+font-family: cursive;
+}
+.para2{
+transition: 1s linear;
+}
+.para2:hover{
+    text-decoration: line-through;
+    font-style: italic;
+    font-size: 150%;
+}
+.prepimage{
+    width: 30%;
+    transition:2s ease-in;
+}
+.prepimage:hover{
+    width: 100vw;
+}
+@media only screen and (max-width:500px){
+    .boxes{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 30px;
+    }
+    .greenbox{
+        margin: 10px;
+        width: 80px;
+        height: 80px;
+    }
+    .box1{
+        transition: 1s linear 0.3s ;
+    }
+    
+    
+    .box1:hover{
+        background-image: radial-gradient(blue,green,yellow);
+        border-radius: 50%;
+    }
+    .box2{
+        transition: 3s ease-in-out ;
+    }
+    .box2:hover{
+        transform: rotate(360deg);
+        border-top-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+    }
+    .box3{
+        transition: 1s linear;
+    }
+    .box3:hover{
+        height: 100px;
+        width: 70px;
+        border-radius: 50%;
+        transform: rotate(-50deg);
+    }
+    .box4{
+        transition: 1s linear;
+    
+    }
+    .box4:hover{
+    border-top-right-radius:100% ;
+    border-bottom-left-radius: 100%;
+    }
+    .para1{
+        transition: 1s linear;
+    }
+    .para1:hover{
+    font-size: 130%;
+    font-family: cursive;
+    }
+    .para2{
+    transition: 1s linear;
+    }
+    .para2:hover{
+        text-decoration: line-through;
+        font-style: italic;
+        font-size: 130%;
+    }
+    .prepimage{
+        width: 30%;
+        transition:2s ease-in;
+    }
+    .prepimage:hover{
+        width: 100vw;
+}
+}
+
